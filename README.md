@@ -20,19 +20,14 @@ IoT system for monitoring temperature, humidity, and motion detection using ESP3
 # Initialize GCP
 gcloud init
 
-# Create VM instance
-gcloud compute instances create mqtt-server --machine-type=e2-micro --zone=your-zone
-
 # Configure firewall rules
 gcloud compute firewall-rules create allow-mqtt --allow=tcp:1883
 ```
 
 ## Server Configuration
 ```bash
-# SSH into instance
-gcloud compute ssh mqtt-server
-
 # Install required packages
+
 # Update package list
 sudo apt update
 
